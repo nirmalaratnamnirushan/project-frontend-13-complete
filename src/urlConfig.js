@@ -1,0 +1,1 @@
+export const api = 'http://loaclhost:2000/api';
