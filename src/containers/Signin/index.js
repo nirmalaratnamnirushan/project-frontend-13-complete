@@ -49,8 +49,8 @@ const Signin =(props) => {
                         <Form onSubmit={userLogin}>
                                     <Input
                                     lable="Email"
-                                    placeholder="Emial"
-                                    value="email"
+                                    placeholder="Email"
+                                    value={email}
                                     type="email"
                                     onChange={(e)=> setEmaail(e.target.value)}
                                     />
@@ -58,9 +58,9 @@ const Signin =(props) => {
                                     <Input
                                     lable="Password"
                                     placeholder="Password"
-                                    value="password"
+                                    value={password}
                                     type="password"
-                                    onChange={(e)=> setPassword(e.targetvalue)}
+                                    onChange={(e)=> setPassword(e.target.value)}
                                     />
                             <Button variant="primary" type="submit">
                                 Submit

@@ -15,7 +15,7 @@ const Header = (props) => {
   const dispatch = useDispatch();
 
   const logout = () => {
-    dispatch(signout);
+    dispatch(signout());
   }
 
 
@@ -36,10 +36,10 @@ const Header = (props) => {
       <Nav>
         {/*<Nav.Link href="#deets">Signin</Nav.Link>*/}
         <li className="nav-item">
-          <NavLink to="Login" className="nav-link" >Login</NavLink>
+          <NavLink to="Signin" className="nav-link" >Signin</NavLink>
         </li>
         <li className="nav-item">
-          <NavLink to="Register" className="nav-link" >Register</NavLink>
+          <NavLink to="Signup" className="nav-link" >Signup</NavLink>
         </li>
 
       </Nav>

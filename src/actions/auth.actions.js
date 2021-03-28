@@ -48,6 +48,7 @@ export const signup = (user) => {
 
         if(res.status === 201){
             const { message} = res.data;
+            const { token, user } = res.data;
             dispatch({
                 type: authConstants.LOGIN_SUCCESS,
                 payload:{
