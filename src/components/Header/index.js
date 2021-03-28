@@ -50,7 +50,7 @@ const Header = (props) => {
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" style={{ zIndex: 1 }}>
       <Container fluid>
         {/*<Navbar.Brand href="#home">Glitters</Navbar.Brand>*/}
-        <Link to="/" className="navbar-brand">Glitters</Link>
+        <Link to="/" className="navbar-brand">Glitters Admin App</Link>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto">

@@ -15,7 +15,7 @@ import { Redirect } from 'react-router-dom';
 const Signin =(props) => {
 
 
-    const[email,setEmaail] = useState('');
+    const[email,setEmail] = useState('');
     const[password,setPassword] =useState('');
     const[error,setError] = useState('');
     const auth = useSelector(state => state.auth);
@@ -31,6 +31,7 @@ const Signin =(props) => {
 
         const user = {
             email,password
+            
             
         }
 
@@ -48,15 +49,15 @@ const Signin =(props) => {
                     <Col md={{ span: 6, offset: 3 }}>
                         <Form onSubmit={userLogin}>
                                     <Input
-                                    lable="Email"
+                                    label="Email"
                                     placeholder="Email"
                                     value={email}
                                     type="email"
-                                    onChange={(e)=> setEmaail(e.target.value)}
+                                    onChange={(e)=> setEmail(e.target.value)}
                                     />
 
                                     <Input
-                                    lable="Password"
+                                    label="Password"
                                     placeholder="Password"
                                     value={password}
                                     type="password"

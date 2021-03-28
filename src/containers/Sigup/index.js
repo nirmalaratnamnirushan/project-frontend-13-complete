@@ -17,7 +17,7 @@ const Signup =(props) => {
 
     const[firstName,setFirstName] = useState('');
     const[lastName,setLastName] = useState('');
-    const[email,setEmaail] = useState('');
+    const[email,setEmail] = useState('');
     const[password,setPassword] =useState('');
     const[error,setError] = useState('');
     const auth = useSelector(state => state.auth);
@@ -74,11 +74,11 @@ const Signup =(props) => {
 
                             
                                 <Input
-                                    lable="Eamil"
+                                    lable="Email"
                                     placeholder="Email"
                                     value={email}
                                     type="email"
-                                    onChange={(e)=> setEmaail(e.target.value) }
+                                    onChange={(e)=> setEmail(e.target.value) }
                                 />
                             
                             
