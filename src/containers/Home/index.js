@@ -12,20 +12,9 @@ const Home =(props) => {
 
 
     return(
-        <Layout>
+        <Layout sidebar>
 
-            <Container fluid>
-                <Row>
-                    <Col md={2} className="sidebar">
-                        <ul>
-                            <li><NavLink to = {'/'}>Home</NavLink></li>
-                            <li><NavLink to = {'/products'}>Products</NavLink></li>
-                            <li><NavLink to = {'/orders'}>Orders</NavLink></li>
-                        </ul>
-                        </Col>
-                    <Col md={9} style={{ marginLeft:'auto'}}>containers</Col>
-                </Row>
-            </Container>
+         
 
             {/*<Jumbotron  style={{margin: "5rem",background:"#fff"}} className="text-center">
                 <h1>Welcome to Admin Dashboard</h1>
